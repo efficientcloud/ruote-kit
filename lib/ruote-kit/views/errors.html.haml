@@ -28,7 +28,7 @@
       %td
         &= error.message
       %td
-        = Time.parse(error.at).localtime.strftime('%Y/%m/%d %H:%M:%S')
+        = Time.parse(error.at).localtime.strftime('%Y/%m/%d %H:%M:%S') rescue nil
       %td
         &= error.action
 
